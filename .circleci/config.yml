@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Show curernt branch
-          command: echo ${BRANCH}
+          command: echo ${CIRCLE_BRANCH}
       - restore_cache:
           keys:
             - app-{{ checksum "package.json" }} # Hurrahz for random twitter people
