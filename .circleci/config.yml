@@ -112,7 +112,7 @@ workflows:
                 - main
       - deploy_to_cloudfront:
           requires:
-            - deploy-to-aws-s3
+            - deploy_to_aws_s3
           filters:
             branches:
               only:
