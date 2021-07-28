@@ -103,7 +103,7 @@ workflows:
       - install_dependencies
       - deploy_to_aws_s3:
           requires:
-            - build
+            - install_dependencies
           filters:
             branches:
               only:
